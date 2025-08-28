@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/compare-requirements-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/compare-requirements-{{ version }}.tar.gz
   sha256: 7c25816aae8bda80f116c7196447dc2cb16c512e359f68da728ece733cbb881c
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 5
+  number: 6
 
 requirements:
   host:
